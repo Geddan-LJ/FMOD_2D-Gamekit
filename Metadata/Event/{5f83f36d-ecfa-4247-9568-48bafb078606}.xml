@@ -5,7 +5,7 @@
 			<value>Magenta Light 1</value>
 		</property>
 		<property name="name">
-			<value>EnemySpitterSpitAttack</value>
+			<value>EnemySpitterSpitAttack1</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -62,11 +62,18 @@
 	<object class="EventAutomatableProperties" id="{19e40cf2-8357-4cfa-82ea-534263d75475}" />
 	<object class="MarkerTrack" id="{e5bd0294-e57e-4e08-8484-0776e846c93b}" />
 	<object class="GroupTrack" id="{72d2ef68-e9c6-4592-8197-76a1dfb35042}">
+		<relationship name="modules">
+			<destination>{0f1e1f11-aa5f-4d15-b126-bcff2b43d6a6}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{5e759781-12ab-493a-9c90-d7998bba0691}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{08c9c585-d8ff-4b0e-a003-6e5a92d6ff1a}" />
+	<object class="Timeline" id="{08c9c585-d8ff-4b0e-a003-6e5a92d6ff1a}">
+		<relationship name="modules">
+			<destination>{0f1e1f11-aa5f-4d15-b126-bcff2b43d6a6}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{ec69a4a6-12e9-4e63-8591-2663aee86bf2}">
 		<relationship name="effectChain">
 			<destination>{78a15a36-c459-4496-b36a-af672f029d0e}</destination>
@@ -84,6 +91,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4a392e4d-d411-4124-8cde-71b0f377a4b4}" />
+	<object class="SingleSound" id="{0f1e1f11-aa5f-4d15-b126-bcff2b43d6a6}">
+		<property name="length">
+			<value>1.5654421768707483</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{4edece6e-1622-490c-9ada-456eb5764e4a}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{5e759781-12ab-493a-9c90-d7998bba0691}">
 		<property name="name">
 			<value>Audio 1</value>
