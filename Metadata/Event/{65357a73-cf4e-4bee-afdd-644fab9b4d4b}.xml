@@ -157,6 +157,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{aaeb4f75-74b2-4440-9245-645fa9e3c60a}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<property name="name">
 			<value>Bubble</value>
 		</property>
