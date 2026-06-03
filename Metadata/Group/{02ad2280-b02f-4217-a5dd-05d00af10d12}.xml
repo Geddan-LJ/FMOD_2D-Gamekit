@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{02ad2280-b02f-4217-a5dd-05d00af10d12}">
+		<property name="color">
+			<value>Magenta Light 1</value>
+		</property>
+		<property name="name">
+			<value>Enemy_Spitter</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{57154c5f-f8a3-40fb-a574-99ed0e53f62f}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{3794f370-8ab3-4f6c-ac26-fd237a605ebc}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{d4b57e43-06e6-43a8-84bb-f02e4bf787ae}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{57154c5f-f8a3-40fb-a574-99ed0e53f62f}">
+		<relationship name="effects">
+			<destination>{ba0e0b55-d6a4-48f5-8a3e-a0b2954b07b8}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{3794f370-8ab3-4f6c-ac26-fd237a605ebc}" />
+	<object class="MixerBusFader" id="{ba0e0b55-d6a4-48f5-8a3e-a0b2954b07b8}" />
+</objects>

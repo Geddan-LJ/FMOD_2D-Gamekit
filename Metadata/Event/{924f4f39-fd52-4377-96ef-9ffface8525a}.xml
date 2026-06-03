@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{924f4f39-fd52-4377-96ef-9ffface8525a}">
+		<property name="note">
+			<value>One shot sfx for when player picks health up</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>
@@ -8,7 +11,7 @@
 			<value>InteractableHealthPickup</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{428fc128-55d9-4d12-9f12-3fa115dcf495}</destination>
@@ -56,17 +59,28 @@
 			<destination>{8230f309-754b-490b-a5cf-597e98843907}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{244f41e8-7a30-4caa-8ec9-71d4f2ef2678}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{1a55daa6-9f48-4daf-ad67-b207a5fa7ec3}" />
 	<object class="MarkerTrack" id="{958e988b-d067-4938-8c20-04291fed1674}" />
 	<object class="GroupTrack" id="{486d2121-5bfe-411b-b0d0-006619589121}">
+		<relationship name="modules">
+			<destination>{ca4d2326-4012-4776-9916-3369b8b2c7bb}</destination>
+			<destination>{edc7359f-e93e-493b-a15a-01d2fa11ca54}</destination>
+			<destination>{9df40a2b-bee9-4a3b-ac2d-618459f5a200}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{2298ff24-92cd-46ca-b582-5a342959462d}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{14a0860c-a80c-453f-9d55-1b4e52f4691d}" />
+	<object class="Timeline" id="{14a0860c-a80c-453f-9d55-1b4e52f4691d}">
+		<relationship name="modules">
+			<destination>{ca4d2326-4012-4776-9916-3369b8b2c7bb}</destination>
+			<destination>{edc7359f-e93e-493b-a15a-01d2fa11ca54}</destination>
+			<destination>{9df40a2b-bee9-4a3b-ac2d-618459f5a200}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{a4ee9874-e7b8-4eca-ad43-fa542641150e}">
 		<relationship name="effectChain">
 			<destination>{da219253-aff5-4cf6-a6cf-08194f0d7dca}</destination>
@@ -84,6 +98,45 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8230f309-754b-490b-a5cf-597e98843907}" />
+	<object class="SingleSound" id="{ca4d2326-4012-4776-9916-3369b8b2c7bb}">
+		<property name="length">
+			<value>0.27500000000000036</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>15.99</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{884248cc-001a-4c7c-9c32-486d71b7fd4e}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{edc7359f-e93e-493b-a15a-01d2fa11ca54}">
+		<property name="start">
+			<value>0.27500000000000036</value>
+		</property>
+		<property name="length">
+			<value>0.27500000000000036</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>15.99</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{884248cc-001a-4c7c-9c32-486d71b7fd4e}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{9df40a2b-bee9-4a3b-ac2d-618459f5a200}">
+		<property name="start">
+			<value>0.55000000000000071</value>
+		</property>
+		<property name="length">
+			<value>0.11999999999999744</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>18.400000000000002</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{20e5d5a8-4e86-4aec-aec3-6e22c9a2af40}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{2298ff24-92cd-46ca-b582-5a342959462d}">
 		<property name="name">
 			<value>Audio 1</value>

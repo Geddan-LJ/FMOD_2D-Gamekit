@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{c2a9a425-cf34-4c79-817a-2454773c7863}">
+		<property name="note">
+			<value>Lightning attack one shot sfx plays when boss summons lightning on ground</value>
+		</property>
 		<property name="color">
 			<value>Cyan Light 2</value>
 		</property>
@@ -56,17 +59,24 @@
 			<destination>{4c2b89a1-44b9-4659-aeaa-28f0f1a22a93}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{9f38fcf4-160a-437f-a306-f629ea512934}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{f348c135-f68d-4ce9-9351-5e3d05b34405}" />
 	<object class="MarkerTrack" id="{88f814a9-7c04-4b84-956e-d5adcdb57fe8}" />
 	<object class="GroupTrack" id="{d85985a4-0475-4008-bd5f-1669b8116163}">
+		<relationship name="modules">
+			<destination>{842e3d30-e120-4407-b902-5aa7760fc575}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{038344cf-4738-4490-9f86-58538ea839ac}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{98ff1095-9490-4cef-890e-bf0608f8b373}" />
+	<object class="Timeline" id="{98ff1095-9490-4cef-890e-bf0608f8b373}">
+		<relationship name="modules">
+			<destination>{842e3d30-e120-4407-b902-5aa7760fc575}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{6ee49a9f-c83c-43f7-b96d-8c2fa5d12578}">
 		<relationship name="effectChain">
 			<destination>{f313d4d5-7988-444b-a4e3-8762e3e297bb}</destination>
@@ -84,6 +94,20 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4c2b89a1-44b9-4659-aeaa-28f0f1a22a93}" />
+	<object class="SingleSound" id="{842e3d30-e120-4407-b902-5aa7760fc575}">
+		<property name="length">
+			<value>0.98582428213421203</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>14.6</value>
+		</property>
+		<property name="pitch">
+			<value>1</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{6122c484-cd01-46cc-935d-dee1c671daf9}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{038344cf-4738-4490-9f86-58538ea839ac}">
 		<property name="name">
 			<value>Audio 1</value>

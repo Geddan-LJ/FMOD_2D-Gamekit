@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{0e3f0fe6-18f1-4599-8963-35e5516a5db5}">
+		<property name="note">
+			<value>One shot sfx for the door switch</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>
@@ -57,7 +60,7 @@
 			<destination>{01cff94e-0a99-4822-85fe-e0dc743b85a5}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{244f41e8-7a30-4caa-8ec9-71d4f2ef2678}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{ebb92069-9dae-4599-921a-1a47d4c6cd17}" />

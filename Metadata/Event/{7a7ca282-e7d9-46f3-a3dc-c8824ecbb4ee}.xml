@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{7a7ca282-e7d9-46f3-a3dc-c8824ecbb4ee}">
+		<property name="note">
+			<value>One shot sfx for when player picks up the keys around the map</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>
@@ -56,7 +59,7 @@
 			<destination>{066daf44-88b5-4f4c-95f7-3e13a12dff2b}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{244f41e8-7a30-4caa-8ec9-71d4f2ef2678}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{72c91092-04f9-4f8a-a8b2-62ab01d6a7e3}" />

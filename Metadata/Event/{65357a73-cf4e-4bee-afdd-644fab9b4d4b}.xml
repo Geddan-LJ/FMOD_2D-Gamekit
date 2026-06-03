@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{65357a73-cf4e-4bee-afdd-644fab9b4d4b}">
+		<property name="note">
+			<value>One shot sfx for acid pool splash sound</value>
+		</property>
 		<property name="color">
 			<value>Purple Light 2</value>
 		</property>
@@ -57,7 +60,7 @@
 			<destination>{1409b412-fac3-4322-918e-fd7096e5b348}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{360e025a-3627-4cbc-9754-af0fc0b8ef8d}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{6dd1e899-39f9-4620-99d3-142ee5697ca3}">

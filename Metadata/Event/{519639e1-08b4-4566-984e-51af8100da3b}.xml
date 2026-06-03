@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{519639e1-08b4-4566-984e-51af8100da3b}">
+		<property name="note">
+			<value>Shield state one shot sfx chooses sound depending on what parameter number is picked.
+0 = shield state down
+1= shield state up</value>
+		</property>
 		<property name="color">
 			<value>Cyan Light 2</value>
 		</property>
@@ -34,6 +39,9 @@
 		<relationship name="timeline">
 			<destination>{e8d8d1da-c9ba-4d91-9117-4b1e64f561af}</destination>
 		</relationship>
+		<relationship name="parameters">
+			<destination>{5dd3c5f7-b2eb-4b59-9e30-5798faa24d7a}</destination>
+		</relationship>
 		<relationship name="banks">
 			<destination>{0e41109f-2d01-4da2-8a51-0de32d7fc467}</destination>
 		</relationship>
@@ -56,17 +64,30 @@
 			<destination>{88527324-2ca5-48e2-b16d-6d5fc81e475b}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{9f38fcf4-160a-437f-a306-f629ea512934}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{0bc31981-d94e-452f-9720-afc03cb8f07d}" />
 	<object class="MarkerTrack" id="{c5bb3be9-b4f4-4dfc-9653-e2901352029a}" />
 	<object class="GroupTrack" id="{cf86922e-5206-42c3-9f04-cb0be2287d26}">
+		<relationship name="modules">
+			<destination>{8a125770-2969-4fda-bf8f-cf2a07f85312}</destination>
+			<destination>{20a2a31a-3631-4bc3-8f00-ddc64e53e60e}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{4ea0f04c-a26f-46e1-871a-01ecf0b15de1}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{e8d8d1da-c9ba-4d91-9117-4b1e64f561af}" />
+	<object class="ParameterProxy" id="{5dd3c5f7-b2eb-4b59-9e30-5798faa24d7a}">
+		<relationship name="modules">
+			<destination>{8a125770-2969-4fda-bf8f-cf2a07f85312}</destination>
+			<destination>{20a2a31a-3631-4bc3-8f00-ddc64e53e60e}</destination>
+		</relationship>
+		<relationship name="preset">
+			<destination>{85bffecd-73ce-498c-874d-42f43de9dc53}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{3108e157-28c9-426c-9f7d-e6201d289f7d}">
 		<relationship name="effectChain">
 			<destination>{8fb8f6dd-2ab4-4973-a476-01637b18e4e0}</destination>
@@ -84,9 +105,31 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{88527324-2ca5-48e2-b16d-6d5fc81e475b}" />
+	<object class="SingleSound" id="{8a125770-2969-4fda-bf8f-cf2a07f85312}">
+		<property name="volume">
+			<value>10</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{40681beb-bd24-47f0-bde1-5b925a08c2b4}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{20a2a31a-3631-4bc3-8f00-ddc64e53e60e}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<property name="volume">
+			<value>10</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{8e3c6773-49be-4765-8061-41bc5f08255c}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{4ea0f04c-a26f-46e1-871a-01ecf0b15de1}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>State</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{0ee8ff72-39b4-40ea-9612-0003560d538f}</destination>

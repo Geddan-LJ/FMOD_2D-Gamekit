@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{cea59efd-e709-47f2-9652-84c3b9a05784}">
+		<property name="note">
+			<value>Shared enemy one shot sfx that plays when killed</value>
+		</property>
 		<property name="color">
 			<value>Yellow Light 2</value>
 		</property>
@@ -57,7 +60,7 @@
 			<destination>{f42067ab-3856-4d8a-ae7f-7946474dee39}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{7ab45b77-6142-41d1-8c55-8c3c1884ac29}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{51e44d5e-0a5f-46ae-b16c-7efc09d22dad}" />

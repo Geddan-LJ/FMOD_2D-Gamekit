@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{a286061d-242e-4ff0-b5c3-294466a5e83d}">
+		<property name="note">
+			<value>One shot sfx for when the interactable door is opened</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>
@@ -57,7 +60,7 @@
 			<destination>{1bcd8dd9-ef34-4dd5-a97a-f2aaea6c5a94}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{244f41e8-7a30-4caa-8ec9-71d4f2ef2678}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{eee2bd0e-1da6-48b5-b617-033287c85197}" />

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{0d7a7a49-223e-45c8-839b-ae19a11ccf53}">
+		<property name="note">
+			<value>One shot sfx for when player destroys a destroyable wall</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>
@@ -58,7 +61,7 @@
 			<destination>{a78a8694-e787-4f2e-b074-757eb2b29485}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{244f41e8-7a30-4caa-8ec9-71d4f2ef2678}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{ea53e118-9b76-44b5-b90c-7201e762f3b6}" />

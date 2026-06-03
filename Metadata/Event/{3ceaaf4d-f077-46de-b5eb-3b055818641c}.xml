@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{3ceaaf4d-f077-46de-b5eb-3b055818641c}">
+		<property name="note">
+			<value>Grenade explosion one shot sfx plays when bosses grenade explodes and makes a large explosion</value>
+		</property>
 		<property name="color">
 			<value>Cyan Light 2</value>
 		</property>
@@ -56,17 +59,24 @@
 			<destination>{44640486-31f6-4890-8285-ed4eca25fcc6}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{9f38fcf4-160a-437f-a306-f629ea512934}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{0bec2150-685a-4ccd-99a7-c4735dd6c71f}" />
 	<object class="MarkerTrack" id="{3ba24c96-2e5f-428f-ba1e-ac14c38f275d}" />
 	<object class="GroupTrack" id="{6c4a3a6f-554a-4b3a-97ef-69eb321749f4}">
+		<relationship name="modules">
+			<destination>{138b7d19-3c76-4c5d-a9df-90aaeedf9b0c}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{68c8adc0-ef0d-4e95-a70f-93d76c23e446}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{570edc7d-8950-4bd1-9277-bed56fc11594}" />
+	<object class="Timeline" id="{570edc7d-8950-4bd1-9277-bed56fc11594}">
+		<relationship name="modules">
+			<destination>{138b7d19-3c76-4c5d-a9df-90aaeedf9b0c}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{284903b3-fa91-480f-8d87-5093d261c37a}">
 		<relationship name="effectChain">
 			<destination>{9cead534-a216-4859-aefa-c786ad9c46c5}</destination>
@@ -84,9 +94,23 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{44640486-31f6-4890-8285-ed4eca25fcc6}" />
+	<object class="SingleSound" id="{138b7d19-3c76-4c5d-a9df-90aaeedf9b0c}">
+		<property name="length">
+			<value>2.7999999999999998</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>5.2000000000000002</value>
+		</property>
+		<property name="pitch">
+			<value>-14</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{6122c484-cd01-46cc-935d-dee1c671daf9}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{68c8adc0-ef0d-4e95-a70f-93d76c23e446}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>GrenadeBeam</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{43c96a18-30a4-48c4-ac8b-1d864d63ec9f}</destination>

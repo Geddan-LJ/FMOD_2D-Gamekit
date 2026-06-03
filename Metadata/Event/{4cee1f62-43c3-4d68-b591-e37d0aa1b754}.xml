@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{4cee1f62-43c3-4d68-b591-e37d0aa1b754}">
+		<property name="note">
+			<value>One shot sfx plays when boss is damaged</value>
+		</property>
 		<property name="color">
 			<value>Cyan Light 2</value>
 		</property>
@@ -56,17 +59,24 @@
 			<destination>{303568f8-7b47-4452-8c9f-5cc27adf189f}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{9f38fcf4-160a-437f-a306-f629ea512934}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{ffaff6a0-b4cb-4e7b-ad67-a81cf1357d81}" />
 	<object class="MarkerTrack" id="{a36d98d4-fcf2-4867-8a97-1cab9035418f}" />
 	<object class="GroupTrack" id="{2562d79b-04c0-425d-a041-e2135f652dcd}">
+		<relationship name="modules">
+			<destination>{54fdc954-a14a-4ec1-9b11-eab8d59f0792}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{db5a4d3a-8de0-4480-a84c-d3afe1134269}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{cbde0bb6-0351-4eac-97db-325c2ca98a78}" />
+	<object class="Timeline" id="{cbde0bb6-0351-4eac-97db-325c2ca98a78}">
+		<relationship name="modules">
+			<destination>{54fdc954-a14a-4ec1-9b11-eab8d59f0792}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{f7b8bb34-64b3-4317-846b-f3a1df2cdf81}">
 		<relationship name="effectChain">
 			<destination>{cdc79207-b7b0-471d-a390-727847aa911c}</destination>
@@ -84,9 +94,23 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{303568f8-7b47-4452-8c9f-5cc27adf189f}" />
+	<object class="SingleSound" id="{54fdc954-a14a-4ec1-9b11-eab8d59f0792}">
+		<property name="length">
+			<value>0.057000000000000002</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>13.26</value>
+		</property>
+		<property name="pitch">
+			<value>-9.5</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{511923b7-f4c7-45fc-b33e-6f256b494fd0}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{db5a4d3a-8de0-4480-a84c-d3afe1134269}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Hurt</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{135f1564-0674-4647-abae-446f02aa9ef4}</destination>

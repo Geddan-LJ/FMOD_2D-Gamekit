@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{dc9633e1-975a-4312-a040-909ac85a3334}">
+		<property name="note">
+			<value>Looped sfx that plays when avatar is pushing a box, the loop region ensures the souind plays its stop move when the avatar is no longer pushing the box. while the avatar is still pushing, the loop is active.
+Parameter is what tells the sfx to loop or not,
+0 = loop
+1 = stop loop</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>
@@ -61,7 +67,7 @@
 			<destination>{735430ba-86fa-4f86-9654-df46a49aebe3}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{244f41e8-7a30-4caa-8ec9-71d4f2ef2678}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{bae14ff8-1739-4c17-b7b6-e775c80e508e}">

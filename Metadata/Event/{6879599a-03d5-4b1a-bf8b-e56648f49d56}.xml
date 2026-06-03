@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{6879599a-03d5-4b1a-bf8b-e56648f49d56}">
+		<property name="note">
+			<value>Avatar take damage one shot sfx, plays when avatar is hurt</value>
+		</property>
 		<property name="color">
 			<value>Yellow</value>
 		</property>
@@ -56,7 +59,7 @@
 			<destination>{a4d5677c-7c8d-4f55-9e2a-fbfaf832e892}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{7c3bc61a-9f3a-4fa7-8627-2d85cc624e9d}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{de059686-dd0e-466d-a59f-54016427a45e}" />

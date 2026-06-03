@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{bd293a07-1c93-4616-87b5-12e7b2942c49}">
+		<property name="note">
+			<value>Avatar melee attack one shot sfx, plays when player attacks melee</value>
+		</property>
 		<property name="color">
 			<value>Yellow</value>
 		</property>
@@ -56,7 +59,7 @@
 			<destination>{e160e01e-0cda-42fc-a098-19f2f074ff79}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{7c3bc61a-9f3a-4fa7-8627-2d85cc624e9d}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{5e987679-4350-4323-bfe4-45a31600d7d0}" />

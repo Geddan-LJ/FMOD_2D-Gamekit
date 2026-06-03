@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{999ffd1a-e163-4786-a892-e8794ed6e5bc}">
+		<property name="note">
+			<value>Avatar ranged attack one shot sfx, plays when player attacks ranged</value>
+		</property>
 		<property name="color">
 			<value>Yellow</value>
 		</property>
@@ -57,7 +60,7 @@
 			<destination>{126caa54-9d9c-47cc-9859-74f7a086c493}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{7c3bc61a-9f3a-4fa7-8627-2d85cc624e9d}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{7ecca3cf-5361-41e7-9bb8-01b2a6b8e7ac}" />

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{5c1afd22-b279-4b77-b493-c8520ce26e5c}">
+		<property name="note">
+			<value>One shot sfx plays when boss moves</value>
+		</property>
 		<property name="color">
 			<value>Cyan Light 2</value>
 		</property>
@@ -56,17 +59,24 @@
 			<destination>{61e6088a-153a-4fd7-8d12-38d372ae8259}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{9f38fcf4-160a-437f-a306-f629ea512934}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{d6daff67-636f-4f5a-943d-a9e681d2c907}" />
 	<object class="MarkerTrack" id="{863de6f1-aa0b-464b-8cf2-587364d1c6cd}" />
 	<object class="GroupTrack" id="{770730c9-c4f8-455f-b660-4c4d98e63a16}">
+		<relationship name="modules">
+			<destination>{6fbd1247-396a-4b89-aec0-04def50ef9a0}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{eea3a0e5-d3a8-4f35-83d7-65184965aa2c}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{a50628f7-2a28-4872-843b-d009d483361e}" />
+	<object class="Timeline" id="{a50628f7-2a28-4872-843b-d009d483361e}">
+		<relationship name="modules">
+			<destination>{6fbd1247-396a-4b89-aec0-04def50ef9a0}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{9d3e210d-315c-4405-a399-9cef63dbafc5}">
 		<relationship name="effectChain">
 			<destination>{37673492-14a0-46dc-92e2-d8815ab1d14c}</destination>
@@ -84,9 +94,20 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{61e6088a-153a-4fd7-8d12-38d372ae8259}" />
+	<object class="SingleSound" id="{6fbd1247-396a-4b89-aec0-04def50ef9a0}">
+		<property name="length">
+			<value>1.5649999999999999</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>10.720000000000001</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{634fa316-d1a8-487b-bc49-ef172d3731b4}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{eea3a0e5-d3a8-4f35-83d7-65184965aa2c}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Walk</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{5cd2ea96-1daa-465c-96ad-ddb72576a8dd}</destination>

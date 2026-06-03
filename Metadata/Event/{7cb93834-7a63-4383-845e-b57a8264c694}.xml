@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{7cb93834-7a63-4383-845e-b57a8264c694}">
+		<property name="note">
+			<value>Looped sfx for acid pool</value>
+		</property>
 		<property name="color">
 			<value>Purple Light 2</value>
 		</property>
@@ -56,7 +59,7 @@
 			<destination>{5c583146-dead-42f2-8c75-77583d630a48}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{360e025a-3627-4cbc-9754-af0fc0b8ef8d}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{417f60de-5ed2-4c1c-af2e-59e1cde01025}" />
