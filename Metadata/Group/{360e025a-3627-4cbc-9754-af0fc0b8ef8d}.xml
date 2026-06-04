@@ -4,6 +4,9 @@
 		<property name="color">
 			<value>Purple Light 2</value>
 		</property>
+		<property name="volume">
+			<value>4</value>
+		</property>
 		<property name="name">
 			<value>Environment</value>
 		</property>
@@ -14,7 +17,7 @@
 			<destination>{1d784581-7228-4209-add2-ee346ad20476}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{6c18f638-648b-46a7-a47b-c768f722919a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{d8b6e0df-63b2-4289-bfc7-28b0f9f3ca57}">
