@@ -98,9 +98,6 @@
 		<property name="length">
 			<value>0.2159999999999993</value>
 		</property>
-		<property name="timelockedOffset">
-			<value>5.4800000000000004</value>
-		</property>
 		<property name="pitch">
 			<value>-3</value>
 		</property>
@@ -112,7 +109,7 @@
 			<destination>{7bb25075-2632-4400-9559-1ffeefab9903}</destination>
 		</relationship>
 		<relationship name="audioFile">
-			<destination>{d2bb2209-a821-4836-b911-8ca777255eb1}</destination>
+			<destination>{79a0dd37-1ddc-4a0a-b878-76c3081baab6}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{b1a17b1f-6a7d-41e8-bf85-0b7ce096e9f6}">
